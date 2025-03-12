@@ -5,7 +5,7 @@ const app = express();
 const adminRoute = require("./routes/adminRoute");
 const fileRoute = require("./routes/fileRoutes");
 
-app.use(cors({origin: "http://localhost:3000"})); // CORS policy 
+app.use(cors()); // CORS policy 
 
 const connectDB = require("./db/connectdb");
 const PORT = 7777
